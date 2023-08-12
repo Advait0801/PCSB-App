@@ -84,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(height: MediaQuery.of(context).size.height*0.08,),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.symmetric(vertical: 5.0,horizontal: 20.0),
+                  padding: const EdgeInsets.symmetric(vertical: 5.0,horizontal: 20.0),
                   decoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: kBlueShade,
@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Icon(
                     Icons.arrow_right_alt_outlined,
                     color: Colors.white,
-                    size: MediaQuery.of(context).size.width*0.2,
+                    size: MediaQuery.of(context).size.width*0.1,
                   ),
                 ),
                 onPressed: (){},
