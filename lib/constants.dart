@@ -9,4 +9,5 @@ const kTextFieldDecoration = InputDecoration(
         borderSide: BorderSide(color: kBlueShade, width: 1.2)),
     focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(color: kBlueShade, width: 2.0)),
-    hintStyle: TextStyle(color: Colors.grey));
+    hintStyle: TextStyle(color: Colors.grey)
+);
