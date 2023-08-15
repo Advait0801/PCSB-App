@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pcsb_app/constants.dart';
+import 'package:pcsb_app/gallery_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+  static const String id = 'login';
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -96,7 +98,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     size: MediaQuery.of(context).size.width*0.1,
                   ),
                 ),
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.pushNamed(context, GalleryScreen.id);
+                },
               )
             ],
           ),

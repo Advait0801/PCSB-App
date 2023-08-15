@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pcsb_app/gallery_screen.dart';
 import 'package:pcsb_app/login_screen.dart';
 
 void main() {
@@ -14,8 +15,12 @@ class PCSBApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black
       ),
+      routes: {
+        LoginScreen.id : (context) => const LoginScreen(),
+        GalleryScreen.id : (context) => const GalleryScreen()
+      },
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen()
+      initialRoute: LoginScreen.id,
     );
   }
 }
