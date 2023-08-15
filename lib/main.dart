@@ -12,12 +12,10 @@ class PCSBApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black
-      ),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
       routes: {
-        LoginScreen.id : (context) => const LoginScreen(),
-        GalleryScreen.id : (context) => const GalleryScreen()
+        LoginScreen.id: (context) => const LoginScreen(),
+        GalleryScreen.id: (context) => GalleryScreen()
       },
       debugShowCheckedModeBanner: false,
       initialRoute: LoginScreen.id,
